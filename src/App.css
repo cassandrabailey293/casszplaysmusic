@@ -1,42 +1,110 @@
-#root {
-  max-width: 1280px;
+.epk {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Hero ── */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0.75) 80%,
+    rgba(13, 13, 13, 1) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.hero-name {
+  margin: 0 0 0.25rem 0;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 700;
+  color: #f0ece4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.hero-tagline {
+  margin: 0;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  color: #c8a45a;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+/* ── Sections ── */
+.section {
+  padding: 5rem 2rem;
+  max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
+}
+
+.section-full {
+  padding: 5rem 2rem;
+  background-color: #111111;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #f0ece4;
+  margin: 0 0 0.5rem 0;
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #c8a45a;
+  margin: 0 0 2.5rem 0;
+  border: none;
+}
+
+/* ── Footer ── */
+.footer {
+  margin-top: auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  color: #555;
+  font-size: 0.85rem;
+  background-color: #0a0a0a;
+  border-top: 1px solid #1a1a1a;
 }

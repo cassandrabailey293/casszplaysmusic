@@ -1,36 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar'
+import About from './components/About'
+import Gallery from './components/Gallery'
+import Contact from './components/Contact'
+import SocialLinks from './components/SocialLinks'
+import heroImage from './assets/cassz_sittingwithguitar.jpg'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <NavBar></NavBar>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="epk">
+      <NavBar />
+
+      {/* Hero */}
+      <section id="hero" className="hero-section">
+        <div className="hero-overlay" />
+        <img src={heroImage} alt="Cass Zimmerman" className="hero-image" />
+        <div className="hero-content">
+          <h1 className="hero-name">Cass Zimmerman</h1>
+          <p className="hero-tagline">Singer &middot; Songwriter &middot; Guitarist</p>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="section">
+        <About />
+      </section>
+
+      {/* Social Links */}
+      <div id="social" className="section-full">
+        <div className="section-inner">
+          <SocialLinks />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      {/* Gallery */}
+      <section id="gallery" className="section">
+        <Gallery />
+      </section>
+
+      {/* Contact */}
+      <div id="contact" className="section-full">
+        <div className="section-inner">
+          <Contact />
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+      <footer className="footer">
+        <p>&copy; {new Date().getFullYear()} Cass Zimmerman. All rights reserved.</p>
+      </footer>
+    </div>
   )
 }
 
