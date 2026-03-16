@@ -3,8 +3,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 // ── Update these with your real contact details ──
-const EMAIL = 'bookings@casszplaysmusic.com';
-const PHONE = '+1 (555) 867-5309';
+const EMAIL = 'bookingcassz@gmail.com';
+const PHONE = '+1 (703) 244-8122';
 
 export default function Contact() {
   return (
@@ -12,7 +12,9 @@ export default function Contact() {
       <h2 className="section-title">Contact</h2>
       <hr className="section-divider" />
       <p style={{ margin: '0 0 2rem 0', fontSize: '1rem', color: '#888', maxWidth: '560px' }}>
-        For bookings, press inquiries, and collaborations, reach out directly.
+        Got a show, event, or project that needs something special? 
+        <br></br>
+        Let's make it happen.
       </p>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>

@@ -1,4 +1,7 @@
 import Box from '@mui/material/Box';
+import withGuitar2 from '../assets/casswithguitar2.jpg';
+import standing from '../assets/cassstanding.jpg';
+import onstage from '../assets/performingonstage.jpg';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // HOW TO ADD YOUR OWN MEDIA
@@ -19,33 +22,18 @@ import Box from '@mui/material/Box';
 const mediaItems = [
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&auto=format',
-    alt: 'Guitar on stage',
+    src: withGuitar2,
+    alt: 'guitar casual',
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1471478331149-c72f17e33c73?w=600&auto=format',
-    alt: 'Performing live',
+    src: standing,
+    alt: 'posing with grafitti',
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=600&auto=format',
-    alt: 'Acoustic guitar',
-  },
-  {
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&auto=format',
-    alt: 'Recording microphone',
-  },
-  {
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format',
-    alt: 'Stage performance',
-  },
-  {
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=600&auto=format',
-    alt: 'Concert crowd',
+    src: onstage,
+    alt: 'Performing onstage',
   },
   // ── Video placeholder ──
   // Uncomment and update src once you add a clip to public/clips/
