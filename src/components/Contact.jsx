@@ -3,7 +3,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 // ── Update these with your real contact details ──
-const EMAIL = 'bookingcassz@gmail.com';
+const EMAIL = 'booking@casszimmerman.com';
 const PHONE = '+1 (703) 244-8122';
 
 export default function Contact() {
